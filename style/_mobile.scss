@@ -1,0 +1,255 @@
+@media screen and (max-width: 780px) {
+  section {
+    max-width: 320px;
+  }
+  .dreamshare {
+    background-image: url(./image/mobile/Headaer.png);
+    height: 540px;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 3px;
+    &__header {
+      @include box(180px, 36px);
+      margin-top: 21px;
+      padding: 0 0 0 9px;
+      &__logo {
+        position: absolute;
+        top: 154px;
+        left: 92px;
+      }
+    }
+    &__bigtop {
+      @include box(320px, 38px);
+      @include font(30px, "Montserrat", 700);
+      margin: 150px auto 0px;
+      padding-left: 10px;
+    }
+    &__bigbottom {
+      @include box(320px, 36px);
+      @include font(30px, "Montserrat", 700);
+      padding-left: 32px;
+    }
+    &__text {
+      @include box(250px, 22px);
+      @include font(18px, "Roboto", 300);
+      letter-spacing: 0px;
+      text-align: center;
+      line-height: 27px;
+      margin: 0 auto;
+      padding-left: 10px;
+    }
+    &__link {
+      @include box(280px, 40px);
+
+      text-align: center;
+      line-height: 40px;
+      margin: 44px 0 0 25px;
+    }
+  }
+  .news__tittle {
+    @include font(22px, "Montserrat", 700);
+    margin: 37px 0 17px -7px;
+    letter-spacing: 0.5px;
+  }
+  .conainer {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .news {
+    height: 740px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 11px;
+    &__first {
+      @include box(300px, 240px);
+      background-image: url(./image/mobile/Step1.png);
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      padding-left: 21px;
+      &__tittle {
+        @include box(260px, 55px);
+        margin-top: 43px;
+        line-height: 16px;
+      }
+      &__text {
+        @include box(260px, 58px);
+        letter-spacing: 0.5px;
+      }
+    }
+    &__second {
+      @include box(300px, 240px);
+      background-image: url(./image/mobile/Step2.png);
+      padding-left: 21px;
+      &__tittle {
+        @include box(200px, 39px);
+      }
+    }
+    &__third {
+      @include box(300px, 240px);
+      background-image: url(./image/mobile/Step3.png);
+      padding-left: 21px;
+    }
+  }
+  .person__tittle {
+    @include font(22px, "Montserrat", 700);
+    margin: 40px 6px 20px 0px;
+  }
+
+  .person {
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 6px;
+
+    &__button {
+      @include box(282px, 40px);
+      margin: 19px 0 0 14px;
+    }
+  }
+  .revers_1 {
+    @include box(236px, 224px);
+    order: 1;
+    margin-bottom: -4px;
+  }
+  .revers_2 {
+    @include box(236px, 224px);
+    order: 2;
+    margin-bottom: 17px;
+  }
+  .revers_3 {
+    @include box(236px, 224px);
+    order: 3;
+    margin-bottom: -4px;
+  }
+  .revers_4 {
+    @include box(236px, 224px);
+    order: 4;
+  }
+  .idea__tittle {
+    @include font(22px, "Montserrat", 700);
+    margin: 36px 26px 33px 18px;
+    line-height: 26px;
+  }
+  .idea {
+    grid-template-columns: 300px;
+    grid-template-rows: 120px 120px 120px 120px 120px 120px 120px;
+    line-height: 27px;
+    gap: 10px 10px;
+    margin-left: 5px;
+
+    &__sports {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      background-image: url(./image/mobile/Sport.png);
+      padding: 20px 50px;
+    }
+    &__health {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      background-image: url(./image/mobile/Healath.png);
+      padding: 33px 50px;
+    }
+    &__extreme {
+      grid-column: 1 / 2;
+      grid-row: 3/4;
+      background-image: url(./image/mobile/Extreme.png);
+      padding: 33px 50px;
+    }
+    &__games {
+      grid-column: 1/2;
+      grid-row: 4/5;
+      background-image: url(./image/mobile/Games.png);
+      padding: 48px 50px;
+    }
+    &__culture {
+      grid-column: 1/2;
+      grid-row: 5/6;
+      background-image: url(./image/mobile/Culture.png);
+      line-height: 120px;
+    }
+    &__relaxation {
+      grid-column: 1/2;
+      grid-row: 6/7;
+      background-image: url(./image/mobile/relaxtion.png);
+      line-height: 120px;
+    }
+    &__trevelling {
+      grid-column: 1/2;
+      grid-row: 7/8;
+      background-image: url(./image/mobile/travel.png);
+      line-height: 120px;
+    }
+  }
+  .active {
+    @include box(320px, 200px);
+    margin: 0px auto;
+
+    &__tittle {
+      @include font(22px, "Montserrat", 700);
+      margin: 39px 32px 0px 20px;
+    }
+    &__question {
+      margin-top: 23px;
+    }
+    &__input {
+      @include box(260px, 33px);
+      margin: 15px 15px 0 15px;
+      padding-left: 15px;
+    }
+    &__button {
+      @include box(282px, 40px);
+      margin: 11px 0 0 14px;
+    }
+  }
+  .about {
+    max-width: 320px;
+    margin-top: 27px;
+    padding-top: 0px;
+    flex-direction: column;
+    &__name {
+      @include box(314px, 18px);
+      text-align: center;
+      margin-top: 21px;
+    }
+    &__company {
+      @include box(305px, 75px);
+      margin-top: 15px;
+      padding-left: 7px;
+     
+
+      &__tittle {
+        text-align: center;
+        padding-bottom: 3px;
+      
+      }
+      &__nav{
+        @include box(210px, 50px);
+        margin: 0px  48px;
+        text-align: center;
+      }
+     li{
+       display: inline-block;
+       margin-right: 11px;
+       
+     }
+    }
+    &__Partners {
+      @include box(92px, 28px);
+      margin: 0 auto;
+     
+    }
+    &__logo {
+      @include box(123px, 42px);
+      margin: 3px auto;
+
+      &__header {
+        margin-bottom: 6px;
+        text-align: center;
+        
+      }
+      
+    }
+  }
+}

@@ -1,0 +1,150 @@
+@media screen and (max-width: 1450px) and(min-width:780px) {
+    section {
+      max-width: 768px;
+    }
+    .dreamshare {
+      background-position: center;
+  
+      &__header {
+        @include box(670px, 116px);
+        padding-right: 0px;
+      }
+    }
+    .news__tittle,
+    .person__tittle {
+      @include font(22px, "Montserrat", 700);
+      margin: 97px auto 38px;
+    }
+    .conainer {
+      width: 748px;
+    }
+    .news {
+      &__first {
+        @include box(236px, 400px);
+        padding-left: 21px;
+  
+        &__tittle {
+          @include box(200px, 60px);
+          line-height: 15px;
+          margin-top: 43px;
+        }
+        &__text {
+          @include box(216px, 72px);
+          letter-spacing: 1px;
+          color: $main-color;
+        }
+      }
+      &__second {
+        @include box(236px, 400px);
+        padding-left: 21px;
+        &__tittle {
+          @include box(185px, 54px);
+          line-height: 15px;
+          margin-top: 13px;
+        }
+        &__text {
+          @include box(196px, 58px);
+        }
+      }
+      &__third {
+        @include box(236px, 400px);
+        padding-left: 21px;
+      }
+    }
+    .person {
+      @include box(492px, 516px);
+      flex-wrap: wrap;
+      &__button {
+        margin: -13px auto;
+      }
+    }
+    .revers_1 {
+      @include box(236px, 224px);
+      order: 1;
+    }
+    .revers_2 {
+      @include box(236px, 224px);
+      order: 2;
+    }
+    .revers_3 {
+      @include box(236px, 224px);
+      order: 3;
+    }
+    .revers_4 {
+      @include box(236px, 224px);
+      order: 4;
+    }
+  
+    .idea__tittle {
+      @include font(22px, "Montserrat", 700);
+      margin: 108px auto 39px;
+    }
+  
+    .idea {
+      &__sports {
+        background-position: -41px 0;
+        padding: 113px 40px;
+        line-height: 27px;
+      }
+      &__health {
+        background-position: -41px 0;
+        padding: 125px 40px;
+        line-height: 27px;
+      }
+      &__extreme {
+        background-position: -21px 0;
+        padding: 127px 20px;
+      }
+      &__games {
+        background-position: center;
+      }
+      &__culture {
+        background-position: -71px 0;
+      }
+      &__relaxation {
+        background-position: 0;
+      }
+      &__trevelling {
+        background-image: url(./image/treveling.png);
+      }
+    }
+    .active {
+      height: 93px;
+      margin: 95px auto;
+  
+      &__tittle {
+        @include font(22px, "Montserrat", 700);
+      }
+      &__question {
+        @include font(18px, "Roboto", 300);
+        margin-top: 54px;
+        letter-spacing: 0;
+      }
+      &__input {
+        height: 36px;
+        margin-bottom: 3px;
+        padding-left: 16px;
+      }
+    }
+    .about {
+      max-width: 768px;
+  
+      &__name {
+        @include box(223px, 220px);
+      }
+      &__company {
+        @include box(173px, 180px);
+      }
+      &__Partners {
+        @include box(182px, 40px);
+        padding-left: 3px;
+      }
+      &__logo {
+        @include box(114px, 42px);
+  
+        &__header {
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
